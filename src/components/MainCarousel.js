@@ -5,19 +5,18 @@ function MainCarousel({ data }) {
   const slicedData = data.slice(0, 5);
 
   return (
-    <div class="mt-40 max-w-6xl h-96 ">
+    <div class="mt-40 mx-auto max-w-6xl  w-3/4 h-auto min-h-72 max-h-auto">
       <Carousel>
         {slicedData.map((newsDetail, index) => {
           return (
             <Carousel.Item>
               <img
-                class
-                className="d-block w-100"
+                class="max-w-full mx-auto"
                 src={newsDetail.urlToImage}
                 alt="First slide"
               />
               <Carousel.Caption>
-                <h3>{newsDetail.title}</h3>
+                <h3 class="font-bold">{newsDetail.title}</h3>
               </Carousel.Caption>
             </Carousel.Item>
           );

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "react-dom";
 
-export default function Hero() {
+export default function Hero({ data }) {
   return (
     <div class="table">
       <div>

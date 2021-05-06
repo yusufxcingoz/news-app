@@ -7,9 +7,15 @@ function Header() {
         <h1>News Site</h1>
       </div>
       <div class="flex justify-between items-center  ">
-        <p class=" m-5 text-sm text-gray-400 ">FOLLOW US</p>
-        <p class=" m-5 text-sm text-gray-400 ">Instagram</p>
-        <p class=" m-5 text-sm text-gray-400 ">Twitter</p>
+        <a class="text-black no-underline hover:text-gray-800" href="">
+          <p class=" m-5 text-sm text-gray-400 ">FOLLOW US</p>
+        </a>
+        <a class="text-black no-underline hover:text-gray-800" href="">
+          <p class=" m-5 text-sm text-gray-400 ">Instagram</p>
+        </a>
+        <a class="text-black no-underline hover:text-gray-800" href="">
+          <p class=" m-5 text-sm text-gray-400 ">Twitter</p>
+        </a>
       </div>
     </div>
   );

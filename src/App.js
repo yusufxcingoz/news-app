@@ -8,6 +8,8 @@ import db from "./firebase";
 import NavCards from "./components/NavCards";
 import MainCarousel from "./components/MainCarousel";
 import "bootstrap/dist/css/bootstrap.min.css";
+import WhatHappened from "./components/WhatHappened";
+import Footer from "./components/Footer";
 
 function App() {
   const [step, setStep] = useState(0);
@@ -19,12 +21,16 @@ function App() {
     );
   }, []);
   return (
-    <div class="flex flex-col m-auto max-w-7xl">
-      <Header />
-      <Hero />
-      <NavButtons setStep={setStep} step={step} />
-      <NavCards data={news} step={step} />
-      <MainCarousel data={news} />
+    <div class="flex font-serif flex-col m-auto ">
+      <div class="flex flex-col m-auto max-w-7xl">
+        <Header />
+        <Hero data={news} />
+        <NavButtons setStep={setStep} step={step} />
+        <NavCards data={news} step={step} />
+        <MainCarousel data={news} />
+        <WhatHappened data={news} />
+      </div>
+      <Footer />
     </div>
   );
 }
